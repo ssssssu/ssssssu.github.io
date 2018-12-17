@@ -12,7 +12,7 @@ github_repo: "https://github.com/ssssssu/ssssssu.github.io" # you code repositor
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "千淘万漉虽辛苦，吹尽狂沙始到金"
-sidebar-avatar: /img/avatar_m.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/touxiang.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
