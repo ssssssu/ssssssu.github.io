@@ -92,6 +92,11 @@
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    <!-- 不蒜子计数 -->
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv" style='display:none'>| 总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span>
+                    <span id="busuanzi_container_site_uv" style='display:none'>| 总访客数 <span id="busuanzi_value_site_uv"></span> 人 </span>
+                    <!-- 不蒜子计数 -->	
                     <br>
                     Theme on <a href="{{ site.github_repo }}">GitHub</a> |
                     <iframe
@@ -99,11 +104,6 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true" >
                     </iframe>
-                    <!-- 不蒜子计数 -->
-                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                    <span id="busuanzi_container_site_pv" style='display:none'>| 总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span>
-                    <span id="busuanzi_container_site_uv" style='display:none'>| 总访客数 <span id="busuanzi_value_site_uv"></span> 人 </span>
-                    <!-- 不蒜子计数 -->	
                 </p>
             </div>
         </div>
@@ -278,7 +278,7 @@
 $(document).ready(function() {
 
     var int = setInterval(fixCount, 50);  // 50ms周期检测函数
-    var countOffset = 20000;  // 初始化首次数据
+    var countOffset = 0;  // 初始化首次数据
 
     function fixCount() {            
        if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
